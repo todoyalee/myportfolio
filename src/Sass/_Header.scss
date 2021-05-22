@@ -1,0 +1,120 @@
+
+.header {
+    @include contained();
+    position:relative;
+    z-index:1;
+    display:grid;
+    grid-template:
+        "im free"
+        "im nav";
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    img{
+        grid-area: im;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: top;
+        border-radius:50%;
+        border: #e45926c4 solid 10px;
+        transition: border 300ms ease-in-out;
+        &:hover{
+            border: #e45926 solid 10px;
+        }
+        box-shadow: 10px 64px 66px 6px rgba(0,0,0,0.1);
+        // -webkit-box-shadow: 10px 64px 66px 6px rgba(0,0,0,0.1);
+        // -moz-box-shadow: 10px 64px 66px 6px rgba(0,0,0,0.1);
+        @include shadowed();
+        animation : showImage 500ms ease-in-out;
+    }
+    ul{
+        grid-area:nav;
+        align-self: start;
+        font-size: 1.4rem;
+        font-weight: 700;
+        display:flex;
+        justify-content: flex-end;
+        margin-bottom : 10px;
+        color: white;
+        position:relative;
+        bottom: 5px;
+        animation:showNav 300ms ease-in-out 500ms forwards;
+        transform: translateY(-20%);
+        opacity: 0;
+        
+        li{
+            @include shadowed();
+            list-style: none;
+            margin-left: 1rem;
+            padding: 10px 15px;
+            background: $orange;
+            border-radius : 30px;
+            cursor: pointer;
+            &:hover{
+                background: lighten($orange, 5%);
+            }
+            &.current{
+                background: darken($head-color,15%)
+            }
+            transition: background 200ms ease-in-out;
+            &:focus{
+                outline:none;
+            }
+        }
+        
+    }
+}
+
+@keyframes showNav{
+    100%{
+        transform:none; 
+        opacity:1;
+    }
+}
+
+@keyframes showImage{
+    0%{
+        opacity: 0;
+    }
+}
+
+@media(max-width:960px ){
+    .header{
+        display:block;
+        text-align: center;
+        img{
+            margin-bottom: 20px;
+        }
+        ul{
+            justify-content: space-around;
+        }
+    }
+}
+
+@media(max-width:650px){
+    html{
+        font-size: 15px;
+    }
+    .header{
+        
+        ul{
+            font-size: 1rem;
+            justify-content:space-between;
+            li{
+                margin-left:0;
+            }
+        }
+    }
+}
+
+@media(max-width: 350px){
+    .header{
+        ul{
+            font-size: 0.9rem;
+            li{
+                padding: 10px;
+            }
+        }
+    }
+}

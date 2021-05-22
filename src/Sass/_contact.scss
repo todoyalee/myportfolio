@@ -1,0 +1,46 @@
+@import 'config';
+
+.form{
+    form{
+        display:flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 10px;
+        
+        input,textarea{
+            font-family: $font-family;
+            border:3px solid darken($head-color,10%);
+            border-radius: 5px;
+            margin-top: 15px;
+            height : 40px;
+            font-size: 1.2rem;
+            transition: border 200ms ease-in-out;
+            &:focus{
+                outline:none;
+                border:5px solid $head-color;
+            }
+            &:hover {
+                border:5px solid darken($head-color,10%);
+            }
+            &[name=description]{
+                height: 200px;
+                margin-bottom: 20px;
+                resize:none;
+            }
+            
+        }
+        
+        button{
+            padding:15px 0;
+            color: white;
+            background: $orange;
+            border: none ; 
+            border-radius: 5px;
+            font-size: 1.2rem;
+            &:hover{
+                background: lighten($orange, 5);
+            }
+        }
+    }
+
+}

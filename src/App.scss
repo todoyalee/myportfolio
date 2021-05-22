@@ -1,0 +1,87 @@
+
+@import 'Sass/config';
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 20px
+}
+body{
+    min-height:100vh;
+    line-height:1.6em; 
+    position: relative; 
+    
+    font-family: 'Montserrat', sans-serif;
+    &::-webkit-scrollbar {
+        width: 8px;
+      }
+       
+    &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: $body-color;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    }
+    
+}
+.my-body{
+    padding-bottom:50px;
+    min-height:100vh;
+}
+.App{
+    padding-top: 20px;
+    overflow-x:hidden;
+    
+}
+.transparent-background-grey{
+    background-color: $body-color;
+    background-image: url("./images/black-linen.png");
+    position : absolute; 
+    height: calc(100% - 180px);
+    width: 100%;
+    top: 180px !important;
+}
+
+.transparent-background-blue{
+    background-color: $head-color;
+    background-image: url("./images/black-linen.png");
+    position: absolute; 
+    top:0;
+    left: 0; 
+    width: 100%; 
+    height: 180px;
+}
+
+hr{
+    margin-bottom : 30px;
+     border: none;
+    border-top :3px darken($head-color,15%) solid;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    &>*{
+        margin-right: 15px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.projects li {
+    list-style: none !important;
+}
+small{
+    font-size:0.8rem;
+}
+
+@import 'Sass/Header';
+@import 'Sass/Main';
+@import 'Sass/images';

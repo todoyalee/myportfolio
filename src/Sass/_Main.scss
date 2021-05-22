@@ -1,0 +1,65 @@
+.main {
+    
+    position:relative;
+    border: 5px solid darken($head-color, 10%);
+    @include contained();
+    z-index:2;
+    background-color:#5785bd;
+    border-radius: 5px;
+    padding : 0 1rem;
+    line-height: 1.8em;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    // overflow-x: hidden;
+    overflow-y: hidden;
+    @include shadowed();
+    margin-bottom: 30px;
+    background-image: url('../images/escheresque.png');
+    
+    
+    & > div{
+        
+        width: 100%;
+        padding: 40px 70px;
+    }
+    
+
+    &::-webkit-scrollbar {
+        width: 8px;
+      }
+       
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    li{
+        list-style-type:circle;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+    }
+    &>div>div{
+        color : black;
+    }
+    .load{
+        position: absolute;
+        top: 47%;
+        left: 50%;
+    }
+}
+
+@media(max-width: 700px){
+    .main{
+        padding: 0 0.5rem;
+        &>div{
+            padding: 40px 1.5rem;
+        }
+    }
+}
+
+@import 'about';
+@import 'skills';
+@import 'contact';

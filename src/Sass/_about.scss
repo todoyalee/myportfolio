@@ -1,0 +1,66 @@
+.aboutme{
+    
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    
+    ul{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .download{
+        background: $orange;
+        text-decoration: none;
+        color: white;
+        padding: 8px 15px; 
+        transition: background 300ms ease-in-out;
+            
+        &:hover{
+            background: lighten($orange, 5%);
+            animation:none;
+            transform: translateY(-0.5px) !important;
+        }
+    }
+    .icon{
+        font-size: 35px;
+        color: $svg-color;
+        transition: color 300ms ease-in-out,transform 300ms ease-in-out;
+        &:hover{
+            color: darken($svg-color,10%);
+            transform: rotate(10deg);
+        }
+    }
+    hr{
+        margin : 15px 0;
+    }
+    .flexed{
+        display:flex;
+        justify-content: space-between; 
+        align-items: center; 
+        li{
+            margin-left:20px;
+            margin-right: 30px;
+        }
+        img{
+            border-radius : 50%;
+            object-fit:cover; 
+            width: 100px ;
+            height: 100px;
+            border: 10px solid transparent;
+            transition: border-color 300ms ease-in-out;
+            &:hover{
+                border-color: rgba(246, 131, 0, 0.517)
+            }
+        }
+    }
+
+}
+
+@media(max-width: 700px){
+    .aboutme {
+        display:block;
+    }
+}
