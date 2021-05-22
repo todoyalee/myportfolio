@@ -23,13 +23,13 @@ function Images() {
     return (
         <div className="images">
             {transition((style, item)=>
-                item?<animated.div 
+                <animated.div 
                 className="theImage"
                 style={{ 
                     background: `url(${item})`,
                     ...style
                 }}
-                />:''
+                />
             )}
         </div>
     )

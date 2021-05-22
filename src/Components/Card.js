@@ -1,10 +1,13 @@
 
-import React from 'react'
+import React,{useState} from 'react'
 
 import styled from 'styled-components'
 
 import {colorDict} from './Necessities'
 import {darken} from 'polished'
+import { useSpring,animated,config } from "react-spring";
+
+
 
 
 
@@ -21,10 +24,7 @@ const StyledButton= styled.button`
         padding: 10px 0;
         color:inherit;
         border-radius: 5px;
-        opacity: 0;
-        transform : translateY(30px);
-        transition: background 300ms ease-in-out, transform 300ms ease-in-out,
-            opacity 300ms ease-in-out;
+        transition: background 300ms ease-in-out;
         &:hover{
             background: darkblue;
         }
@@ -33,7 +33,7 @@ const StyledButton= styled.button`
 const StyledCard = styled.div`
     background:#5785bd;
     border:3px ${darken(0.15,colorDict.headColor)} solid ;
-    height:400px;
+    height:300px;
     border-radius:5px;
     display:flex;
     flex-direction:column;
@@ -41,10 +41,7 @@ const StyledCard = styled.div`
     color: white;
     overflow-y:hidden;
     position: relative;
-    &:hover ${StyledButton}{
-        transform : none;
-        opacity: 1;
-    }
+    
     &::after{
         content:'';
         position: absolute; 
@@ -61,12 +58,14 @@ const StyledCard = styled.div`
 
 const StyledH1 = styled.h1`
     margin-top: 10px;
+    font-size: 1rem;
 `
 
 const Line = styled.div`
     height: 1px;
     width: 100%;
     background: white;
+    
 `
 
 const StyledSmall = styled.small`
@@ -97,28 +96,62 @@ const StyledPara= styled.p`
     }
 `
 
+const StyledImg = styled.img`
+    width: 75px; 
+    height: 75px; 
+    object-fit: cover;
+    border-radius: 100px;
+    margin-left: 30px;
+`
+
+const FlexTop= styled.div`
+    display:flex;
+    align-items: center;
+    width: 100%;
+    column-gap:20px;
+
+`
 
 
 
 
-function Card(){
+
+function Card({cardData}){
+
+    const [hovered,setHovered]=useState(false)
+
+    const animation = useSpring({
+        transform : hovered? 'translateY(0px)' : 'translateY(40px)',
+        opacity: hovered ? 1 : 0,
+        config:config.slow
+    })
+
+    const AnimatedButton = animated(StyledButton);
 
     return(
         
-        <StyledCard className="Card">
-            <StyledH1>This is a Title!</StyledH1>
-            <StyledSmall>(reactjs/nodejs/mongodb)</StyledSmall>
+        <StyledCard className="Card"
+            onMouseOver={()=>{setHovered(true)}}
+            onMouseOut={()=>{setHovered(false)}}
+        >
+            <FlexTop>
+                <StyledImg src={cardData.image}></StyledImg>
+                <div>
+                    <StyledH1>{cardData.title}</StyledH1>
+                    <StyledSmall>{cardData.parenthesis}</StyledSmall>
+                </div>  
+            </FlexTop>
             <Line></Line>
-            <StyledPara>
-                Dalideco ist eine groBe kartoffel. Er ist sehr intelligent und er  verstehen alles so gut.
-                er kommt aus tunisia und er isst ein student auf insat
-            </StyledPara>
+            <StyledPara>{cardData.paragraph}</StyledPara>
             
             <div style={{width: '90%'}}>
             
-            <StyledButton onClick={()=>{
-                window.open('https://github.com','_blank')
-            }}>View on github</StyledButton>
+            <AnimatedButton 
+                style={animation}
+                onClick={()=>{
+                    window.open(cardData.link,'_blank')
+                }}
+            >View on github</AnimatedButton>
             
             </div>
             

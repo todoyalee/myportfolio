@@ -1,8 +1,9 @@
 import React,{useEffect, useState} from 'react'
 import Card from './Card'
-import Reveal,{Fade} from 'react-awesome-reveal'
+import Reveal from 'react-awesome-reveal'
 import {PropagateLoader} from 'react-spinners'
 import { keyframes } from "@emotion/react";
+import cardsData from '../data/cardsData'
 
 const customAnimation = keyframes`
   from {
@@ -42,11 +43,13 @@ function Projects(){
         
         <ul className="projects" style={projectsStyle}>
             <Reveal cascade keyframes={customAnimation}>
-            <li><Card /></li>
-            <li><Card /></li>
-            <li><Card /></li>
-            <li><Card /></li>
-            <li><Card /></li>
+                {cardsData.map(cardData =>{
+                    return (
+                        <li><Card
+                            cardData= {cardData}
+                        /></li>
+                    )
+                } )}
             </Reveal>
             
             
