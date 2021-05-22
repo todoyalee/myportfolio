@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfoliolook/static/css/main.d684ac20.chunk.css",
+    "main.js": "/portfoliolook/static/js/main.befd6fcf.chunk.js",
+    "main.js.map": "/portfoliolook/static/js/main.befd6fcf.chunk.js.map",
+    "runtime-main.js": "/portfoliolook/static/js/runtime-main.c81fe310.js",
+    "runtime-main.js.map": "/portfoliolook/static/js/runtime-main.c81fe310.js.map",
+    "static/js/2.e0fc4178.chunk.js": "/portfoliolook/static/js/2.e0fc4178.chunk.js",
+    "static/js/2.e0fc4178.chunk.js.map": "/portfoliolook/static/js/2.e0fc4178.chunk.js.map",
+    "index.html": "/portfoliolook/index.html",
+    "static/css/main.d684ac20.chunk.css.map": "/portfoliolook/static/css/main.d684ac20.chunk.css.map",
+    "static/js/2.e0fc4178.chunk.js.LICENSE.txt": "/portfoliolook/static/js/2.e0fc4178.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/portfoliolook/static/media/black-linen.8a1abc77.png",
+    "static/media/insat.9f9b608e.jpg": "/portfoliolook/static/media/insat.9f9b608e.jpg",
+    "static/media/lyceeEnnasr.fc505db1.jpg": "/portfoliolook/static/media/lyceeEnnasr.fc505db1.jpg",
+    "static/media/myCV.3b28bd58.pdf": "/portfoliolook/static/media/myCV.3b28bd58.pdf",
+    "static/media/myImg.33ba861d.jpg": "/portfoliolook/static/media/myImg.33ba861d.jpg",
+    "static/media/project1.fb6ed691.jpg": "/portfoliolook/static/media/project1.fb6ed691.jpg",
+    "static/media/project2.40d31dc8.jpg": "/portfoliolook/static/media/project2.40d31dc8.jpg",
+    "static/media/project3.34f4e7d7.jpg": "/portfoliolook/static/media/project3.34f4e7d7.jpg",
+    "static/media/project4.cb8d4658.jpg": "/portfoliolook/static/media/project4.cb8d4658.jpg",
+    "static/media/project5.fc46f107.jpg": "/portfoliolook/static/media/project5.fc46f107.jpg",
+    "static/media/project6.982fdf28.jpg": "/portfoliolook/static/media/project6.982fdf28.jpg",
+    "static/media/project7.fd26c343.jpg": "/portfoliolook/static/media/project7.fd26c343.jpg",
+    "static/media/project8.a64cc7ce.jpg": "/portfoliolook/static/media/project8.a64cc7ce.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c81fe310.js",
+    "static/js/2.e0fc4178.chunk.js",
+    "static/css/main.d684ac20.chunk.css",
+    "static/js/main.befd6fcf.chunk.js"
+  ]
+}
