@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.87210467.chunk.css",
-    "main.js": "/myportfolio/static/js/main.befd6fcf.chunk.js",
-    "main.js.map": "/myportfolio/static/js/main.befd6fcf.chunk.js.map",
+    "main.js": "/myportfolio/static/js/main.12b3532d.chunk.js",
+    "main.js.map": "/myportfolio/static/js/main.12b3532d.chunk.js.map",
     "runtime-main.js": "/myportfolio/static/js/runtime-main.a7c8253a.js",
     "runtime-main.js.map": "/myportfolio/static/js/runtime-main.a7c8253a.js.map",
     "static/js/2.c466ade0.chunk.js": "/myportfolio/static/js/2.c466ade0.chunk.js",
@@ -10,11 +10,14 @@
     "index.html": "/myportfolio/index.html",
     "static/css/main.87210467.chunk.css.map": "/myportfolio/static/css/main.87210467.chunk.css.map",
     "static/js/2.c466ade0.chunk.js.LICENSE.txt": "/myportfolio/static/js/2.c466ade0.chunk.js.LICENSE.txt",
+    "static/media/TheFoodiesWebsite.d9293191.png": "/myportfolio/static/media/TheFoodiesWebsite.d9293191.png",
+    "static/media/WipeLacer.febd7360.png": "/myportfolio/static/media/WipeLacer.febd7360.png",
     "static/media/App.scss": "/myportfolio/static/media/black-linen.8a1abc77.png",
     "static/media/insat.9f9b608e.jpg": "/myportfolio/static/media/insat.9f9b608e.jpg",
     "static/media/lyceeEnnasr.fc505db1.jpg": "/myportfolio/static/media/lyceeEnnasr.fc505db1.jpg",
     "static/media/myCV.3b28bd58.pdf": "/myportfolio/static/media/myCV.3b28bd58.pdf",
     "static/media/myImg.33ba861d.jpg": "/myportfolio/static/media/myImg.33ba861d.jpg",
+    "static/media/portfolio.f64eaadd.png": "/myportfolio/static/media/portfolio.f64eaadd.png",
     "static/media/project1.fb6ed691.jpg": "/myportfolio/static/media/project1.fb6ed691.jpg",
     "static/media/project2.40d31dc8.jpg": "/myportfolio/static/media/project2.40d31dc8.jpg",
     "static/media/project3.34f4e7d7.jpg": "/myportfolio/static/media/project3.34f4e7d7.jpg",
@@ -28,6 +31,6 @@
     "static/js/runtime-main.a7c8253a.js",
     "static/js/2.c466ade0.chunk.js",
     "static/css/main.87210467.chunk.css",
-    "static/js/main.befd6fcf.chunk.js"
+    "static/js/main.12b3532d.chunk.js"
   ]
 }
