@@ -20,16 +20,16 @@ export default function Main(props) {
             
             <div>
                    <Switch>  
-                       <Route path="/portfoliolook/projects">
+                       <Route exact path="/myportfolio/projects">
                            <Projects/>
                        </Route>   
-                       <Route path="/portfoliolook/contact" >
+                       <Route exact path="/myportfolio/contact" >
                            <Contact myInput={myInput} setMyInput={setMyInput}/>
                        </Route>
-                       <Route path="/portfoliolook/skills">
+                       <Route exact path="/myportfolio/skills">
                            <Skills/>
                        </Route>
-                       <Route path="/portfoliolook">
+                       <Route exact path="/myportfolio">
                            <About/>
                        </Route>
                    </Switch> 

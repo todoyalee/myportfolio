@@ -2,7 +2,7 @@
   "name": "front-end",
   "version": "0.1.0",
   "proxy": "http://localhost:5000/",
-  "homepage": "https://dalideco.github.io/myportfolio/",
+  "homepage": "https://dalideco.github.io/myportfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.4.0",

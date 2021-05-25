@@ -43,6 +43,13 @@
         transform: translateY(-20%);
         opacity: 0;
         
+        .current>li{
+            background: darken($head-color,15%);
+            &:hover{
+                background: darken($head-color,15%);
+            }
+        }
+
         li{
             @include shadowed();
             list-style: none;
@@ -54,9 +61,7 @@
             &:hover{
                 background: lighten($orange, 5%);
             }
-            &.current{
-                background: darken($head-color,15%)
-            }
+            
             transition: background 200ms ease-in-out;
             &:focus{
                 outline:none;
