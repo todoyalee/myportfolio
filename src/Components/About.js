@@ -13,7 +13,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {PropagateLoader} from 'react-spinners'
 
 
-function About() {
+function About({images}) {
     
     const [loading , setLoading] = useState(true);
     useEffect(()=>{
@@ -51,14 +51,14 @@ function About() {
                     <Fade left distance="50px" delay={150} >
                     <li>Lycee Ennasr 2</li>
                     </Fade>
-                    <img src={lyceeImg} alt="lycee ennasr" ></img>
+                    <img src={images.highSchoolImg} alt="lycee ennasr" ></img>
                 </div>
                 <hr></hr>
                 <div class="flexed">
                     <Fade left distance="50px" delay={300}>
                     <li>Software engineering at National institute of applied science and technology INSAT</li>
                     </Fade>
-                    <img src={insatImg} alt="insat" ></img>
+                    <img src={images.universityImg} alt="insat" ></img>
                 </div>
                 <hr></hr>
             </ul>

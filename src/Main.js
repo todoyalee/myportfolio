@@ -6,7 +6,7 @@ import Projects from './Components/Projects'
 import {Route, Switch} from 'react-router-dom'
 
 
-export default function Main(props) {
+export default function Main({images}) {
 
     const [myInput , setMyInput]= useState({
         name: '',
@@ -30,7 +30,7 @@ export default function Main(props) {
                            <Skills/>
                        </Route>
                        <Route exact path="/myportfolio">
-                           <About/>
+                           <About images={images}/>
                        </Route>
                    </Switch> 
             </div>

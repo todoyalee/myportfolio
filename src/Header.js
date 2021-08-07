@@ -1,8 +1,8 @@
-import React, { useRef} from 'react'
+import React, { useRef } from 'react'
 import myImg from './images/myImg.jpg'
 import { NavLink} from 'react-router-dom'
 
-function Header() {
+function Header({img}) {
 
     const liArray = [useRef(),useRef(),useRef(),useRef()];
     const [about, skills, projects,contact] = liArray
@@ -10,7 +10,7 @@ function Header() {
 
     return (
         <div className="header">
-          <img src={myImg} alt="this is me."/>
+          <img src={img} alt="this is me."/>
           <ul className="navigation">
             <NavLink exact to="/myportfolio" activeClassName="current" >
             <li  ref={about}>about me</li>
