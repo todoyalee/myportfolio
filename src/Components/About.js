@@ -1,7 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import myCV from '../images/myCV.pdf'
 import Fade from 'react-reveal/Fade'
-import insatImg from '../images/institutes/insat.jpg'
 import lyceeImg from '../images/institutes/lyceeEnnasr.jpg'
 
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
@@ -36,7 +35,7 @@ function About({images}) {
             <p>
                 Enthusiastic Software engineering student eager to contribute to 
                 team success through diligence, attention to the slightest details and 
-                above average organizational skills. Clear understanding of modern 
+                above average organizational skills. Good exeperience about projects in modern 
                 technologies and frameworks. Motivated to learn, prosper and excel 
                 in the computer science industry.
             </p>
@@ -49,16 +48,16 @@ function About({images}) {
                 <hr/>
                 <div class="flexed">
                     <Fade left distance="50px" delay={150} >
-                    <li>Lycee Ennasr 2</li>
+                    <li>Lycee Bardo 2</li>
                     </Fade>
                     <img src={images.highSchoolImg} alt="lycee ennasr" ></img>
                 </div>
                 <hr></hr>
                 <div class="flexed">
                     <Fade left distance="50px" delay={300}>
-                    <li>Software engineering at National institute of applied science and technology INSAT</li>
+                    <li>Computer Science student at Higher Institute of Applied Sciences and Technology of Mateur (ISSATM)</li>
                     </Fade>
-                    <img src={images.universityImg} alt="insat" ></img>
+                    <img src={images.universityImg} alt="ISSATM" ></img>
                 </div>
                 <hr></hr>
             </ul>
@@ -69,22 +68,16 @@ function About({images}) {
                 <Fade bottom >
                     <a href={myCV} download className ="download"  >Download CV!</a>
                 </Fade>
-                <a href="https://github.com/dalideco/" target="_blank" className="icon-holder" rel="noreferrer">
+                <a href="https://github.com/todoyalee" target="_blank" className="icon-holder" rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} className="icon gh" />
                 </a>
-                <a href="https://www.linkedin.com/in/dalideco/" target="_blank" className="icon-holder" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/mohamed-ali-belkouri-795896225/" target="_blank" className="icon-holder" rel="noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} className="icon linked" />
                 </a>
             </div>
 
 
 
-            {/* <a href="https://github.com/dalideco/" target="_blank" className="icon-holder" rel="noreferrer">
-                <GithubIcon/>
-            </a>
-            <a href="https://www.linkedin.com/in/dalideco/" target="_blank" className="icon-holder" rel="noreferrer">
-                <LinkedInIcon/>
-            </a> */}
         </div>
     )
 }

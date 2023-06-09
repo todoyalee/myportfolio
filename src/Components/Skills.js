@@ -3,7 +3,7 @@ import Images from './Images'
 
 import {PropagateLoader} from 'react-spinners'
 import rocket from '../images/svg/rocket.png'
-import {webSkills,basicSkills,dataSkills} from './Necessities'
+import {webSkills,basicSkills,dataSkills, devops} from './Necessities'
 import {Fade} from 'react-reveal'
 
 function Skills() {
@@ -39,10 +39,10 @@ function Skills() {
                 
                 
                 <div>
-                    <h3>Data Analysis Skills</h3>
+                    <h3>Devops</h3>
                     <Fade right distance="100px">
                         <ul>
-                            {dataSkills.map(skill=> (<li><img src={rocket} alt=""></img>{skill}</li>))}
+                            {devops.map(skill=> (<li><img src={rocket} alt=""></img>{skill}</li>))}
                         </ul>
                     </Fade>
                 </div>

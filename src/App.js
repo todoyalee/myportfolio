@@ -14,9 +14,9 @@ function App() {
   const [universityImg, setUniversityImg] = useState("");
   
   useEffect(async()=>{
-    await import('./images/myImg.jpg').then(item=>{setProfileImg(item.default)});
-    await import('./images/institutes/lyceeEnnasr.jpg').then(item=>{setHighSchoolImg(item.default)});
-    await import('./images/institutes/insat.jpg').then(item=>{setUniversityImg(item.default)});
+    await import('./images/daly.jpg').then(item=>{setProfileImg(item.default)});
+    await import('./images/institutes/lycee_bardo.jpg').then(item=>{setHighSchoolImg(item.default)});
+    await import('./images/institutes/ISSATM.jpeg').then(item=>{setUniversityImg(item.default)});
     setLoading(false)
   })
  

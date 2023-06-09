@@ -1,14 +1,14 @@
-import img1 from '../images/project1.jpg'
-import img2 from '../images/project2.jpg'
-import img3 from '../images/project3.jpg'
-import img4 from '../images/project4.jpg'
-import img5 from '../images/project5.jpg'
-import img6 from '../images/project6.jpg'
+import img1 from '../images/olivia2.png'
+import img2 from '../images/chatbot.png'
+import img3 from '../images/fallBall.png'
+import img4 from '../images/id_card.png'
+import img5 from '../images/library_management.png'
+
 import img7 from '../images/project7.jpg'
-import img8 from '../images/project8.jpg'
+
 
 const urls = [
-    img1,img2,img3,img4,img5,img6,img7,img8
+    img1,img2,img3,img4,img5,img7,
 ]
 
 const colorDict = {
@@ -23,24 +23,26 @@ const colorDict = {
 //skills
 const webSkills=[
     "html/css/js",
-    "Sass",
     "mySQL",
     "MERN STACK",
     "Mongoose js", 
-    "React Spring",
-    "Styled-components"
+    "Spring",
+    "Styled-components",
+    "Flask"
 ]
 
-const dataSkills=[
-    "Python",
-    "Matplotlib",
-    "Pandas",
-    "Seaborn"
+const devops=[
+    "RobotFramework",
+    "Sellenium",
+    "Cypress"
+    
 ]
 
 const basicSkills=[
     "java",
-    "c/c++"
+    "c/c++",
+    "python"
 ]
 
-export {urls, colorDict,webSkills,dataSkills,basicSkills} ;
+
+export {urls, colorDict,webSkills,basicSkills,devops} ;
